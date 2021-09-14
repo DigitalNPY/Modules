@@ -1,0 +1,122 @@
+
+    :root {
+  --red: #eb4e6c;
+  --radius:10px;
+  --shadow-1: 0px 0px 16px rgba(137, 172, 221, 0.432);
+  --shadow-2 : 5px 0px 18px rgba(0, 61, 123, 0.13);
+
+}
+
+body {
+    color:#003d7b!important;
+    font-family: 'Lato', sans-serif;
+}
+
+/*====PopupBox====*/
+
+.npy_popupbox{
+    background:#fff;
+    border-radius:var(--radius);
+    box-shadow: var(--shadow-1);
+    color:var(--blue);
+    display: flex;
+    padding:30px 0px 30px 80px;
+    margin: 40px auto;
+    transition: opacity 200ms linear;
+    transition: transform 200ms linear;
+
+}
+
+.npy_popupbox:hover{
+    box-shadow: var(--shadow-2);
+    cursor:pointer;
+}
+
+
+
+
+
+
+/*===== Popups====*/
+
+ .npy_popup {
+    position: fixed;
+    left: 50%;
+    background: #fff;
+    z-index: 999;
+    padding: 20px;
+    border-radius: var(--radius);
+    box-shadow: 1px 0px 160px #000;
+    display: none;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    top: 50%;
+    text-align:center;
+    margin:auto;
+    max-height:90vh;
+    
+}
+
+ .npy_popup_content::-webkit-scrollbar{
+    background:#fff;
+}
+
+ .npy_popup_content::-webkit-scrollbar-thumb  {
+  background: var(--red);
+  border-radius: 10px;
+}
+
+ .npy_popup_content {
+    max-height:80vh;
+    width:90%;
+    margin:auto;
+    overflow-y:scroll;
+    position:relative;
+}
+
+ .npy_popup img {
+    max-width:100%;
+    float:right;
+    display:block;
+}
+
+.npy_popup img:hover {
+    cursor:pointer;
+}
+
+
+.npy_popup h3{
+    text-transform:uppercase;
+    font-weight:900;
+}
+
+.npy_popup p:last-child{
+    margin:50px auto
+}
+
+.npy_popup a {
+    color:#fff;
+    text-transform:uppercase;
+    background:var(--red);
+    text-decoration:none;
+    padding:15px 10px;
+    border-radius:50px;
+    font-size:12px;
+    width:135px;
+    text-align:center
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
